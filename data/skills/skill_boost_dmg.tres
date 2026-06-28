@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://cala20m5wt3sy"]
+
+[ext_resource type="PackedScene" uid="uid://c0d8sq4qn5fyt" path="res://scenes/effects/skill_boost_dmg.tscn" id="1_e73vs"]
+[ext_resource type="Texture2D" uid="uid://de2d7ac1yxjun" path="res://Sprites/Ui/Skill Icon/Spell/MagicWeapon.png" id="2_qcnww"]
+[ext_resource type="Script" uid="uid://cwldjfppori1i" path="res://data/skills/skill_data.gd" id="3_ygej8"]
+
+[resource]
+script = ExtResource("3_ygej8")
+mana_cost = 2.0
+explosion_effect = ExtResource("1_e73vs")
+icon = ExtResource("2_qcnww")
+id = "boost_dmg"
+name = "Boost DMG"
+description = "Increases attack damage"
+price = 50
+metadata/_custom_type_script = "uid://cwldjfppori1i"

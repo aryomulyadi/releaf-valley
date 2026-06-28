@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bhfqw0dl34law"]
+
+[ext_resource type="Texture2D" uid="uid://s0sv8vpbxmce" path="res://Sprites/FX/Magic/Aura/SpriteSheet.png" id="1_8ofjd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fepqv"]
+atlas = ExtResource("1_8ofjd")
+region = Rect2(0, 0, 25, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahie8"]
+atlas = ExtResource("1_8ofjd")
+region = Rect2(25, 0, 25, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cadtq"]
+atlas = ExtResource("1_8ofjd")
+region = Rect2(50, 0, 25, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8bab"]
+atlas = ExtResource("1_8ofjd")
+region = Rect2(75, 0, 25, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi3qi"]
+atlas = ExtResource("1_8ofjd")
+region = Rect2(100, 0, 25, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d38bg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fepqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahie8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cadtq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8bab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi3qi")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="NewLevelFX" type="AnimatedSprite2D" unique_id=2085195586]
+sprite_frames = SubResource("SpriteFrames_d38bg")
+autoplay = "default"
+frame = 4
+frame_progress = 1.0

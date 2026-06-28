@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://btsvovgsypxea"]
+
+[ext_resource type="PackedScene" uid="uid://cjk4x0irxwer0" path="res://scenes/npc/npc_simple.tscn" id="1_idj4r"]
+[ext_resource type="Texture2D" uid="uid://0soynr2f1fek" path="res://Sprites/Actor/Characters/Hunter/SeparateAnim/Idle.png" id="2_btih2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5651a"]
+atlas = ExtResource("2_btih2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_86gm3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5651a")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}]
+
+[node name="NPCHunter" unique_id=527095529 instance=ExtResource("1_idj4r")]
+
+[node name="AnimSprite" parent="." index="1" unique_id=2029516020]
+sprite_frames = SubResource("SpriteFrames_86gm3")

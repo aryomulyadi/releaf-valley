@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://begkmt6oqa7j4"]
+
+[ext_resource type="PackedScene" uid="uid://dlagodnkrug8l" path="res://scenes/ui/skill_panel/skill_button.tscn" id="1_gdjvl"]
+[ext_resource type="Script" uid="uid://bkm33wdgx4yp7" path="res://scenes/ui/skill_panel/skills_panel.gd" id="1_iv5ke"]
+[ext_resource type="Resource" uid="uid://cfga7wns6vhya" path="res://data/skills/skill_shuriken.tres" id="3_0osin"]
+[ext_resource type="Resource" uid="uid://cfytt0p0solup" path="res://data/skills/skill_thunder.tres" id="3_vf0q1"]
+[ext_resource type="Resource" uid="uid://cwopkwcr22w38" path="res://data/skills/skill_orb_plant.tres" id="4_21280"]
+[ext_resource type="Resource" uid="uid://juo3cbf82hoe" path="res://data/skills/skill_rock_spike.tres" id="5_if1la"]
+[ext_resource type="Resource" uid="uid://c68v3a23go3o6" path="res://data/skills/skill_kunai.tres" id="6_mvs35"]
+[ext_resource type="Resource" uid="uid://daefifi76bwrl" path="res://data/skills/skill_ice.tres" id="7_chf1s"]
+[ext_resource type="Resource" uid="uid://eyfmmo47sn5k" path="res://data/skills/skill_water_canon.tres" id="9_1ijo2"]
+[ext_resource type="Resource" uid="uid://cbnwuibo54sks" path="res://data/skills/skill_water_splash.tres" id="11_a6g6o"]
+[ext_resource type="Resource" uid="uid://cala20m5wt3sy" path="res://data/skills/skill_boost_dmg.tres" id="11_vf0q1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v20om"]
+bg_color = Color(0.14901961, 0.16470589, 0.20784314, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.101960786, 0.11372549, 0.14901961, 1)
+shadow_size = 2
+shadow_offset = Vector2(4, 4)
+
+[node name="SkillsPanel" type="PanelContainer" unique_id=2130101166]
+custom_minimum_size = Vector2(215, 0)
+theme_override_styles/panel = SubResource("StyleBoxFlat_v20om")
+script = ExtResource("1_iv5ke")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=344973773]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer" unique_id=580374498]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBox" unique_id=1027479436]
+layout_mode = 2
+text = "Skills"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/VBox" unique_id=210862036]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+color = Color(0.18804985, 0.20658383, 0.25752696, 1)
+
+[node name="Space" type="Control" parent="MarginContainer/VBox" unique_id=59697691]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBox" unique_id=997684318]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBox/VBoxContainer" unique_id=2044181556]
+layout_mode = 2
+alignment = 1
+
+[node name="SkillButton" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer" unique_id=352473239 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+is_free = true
+skill_data = ExtResource("3_vf0q1")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBox/VBoxContainer" unique_id=416442593]
+layout_mode = 2
+alignment = 1
+
+[node name="SkillButton" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer2" unique_id=344613372 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("4_21280")
+
+[node name="Control" type="Control" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer2" unique_id=554746475]
+custom_minimum_size = Vector2(74, 0)
+layout_mode = 2
+
+[node name="SkillButton2" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer2" unique_id=2089073946 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("5_if1la")
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBox/VBoxContainer" unique_id=1372747658]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="SkillButton" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer3" unique_id=542739268 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("6_mvs35")
+
+[node name="SkillButton2" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer3" unique_id=1358848159 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("7_chf1s")
+
+[node name="SkillButton3" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer3" unique_id=815615211 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("3_0osin")
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBox/VBoxContainer" unique_id=1294968001]
+layout_mode = 2
+alignment = 1
+
+[node name="SkillButton" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer4" unique_id=1921722901 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("9_1ijo2")
+
+[node name="Control" type="Control" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer4" unique_id=1338493173]
+custom_minimum_size = Vector2(74, 0)
+layout_mode = 2
+
+[node name="SkillButton2" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer4" unique_id=2137849087 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("11_a6g6o")
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/VBox/VBoxContainer" unique_id=260937006]
+layout_mode = 2
+alignment = 1
+
+[node name="SkillButton" parent="MarginContainer/VBox/VBoxContainer/HBoxContainer5" unique_id=361332609 instance=ExtResource("1_gdjvl")]
+layout_mode = 2
+skill_data = ExtResource("11_vf0q1")

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://cfga7wns6vhya"]
+
+[ext_resource type="Script" uid="uid://cwldjfppori1i" path="res://data/skills/skill_data.gd" id="1_8d4ly"]
+[ext_resource type="PackedScene" uid="uid://b6rmj0a7oohxl" path="res://scenes/effects/skill_shuriken.tscn" id="1_nuf3s"]
+[ext_resource type="Texture2D" uid="uid://qjsmi71b0p78" path="res://Sprites/Ui/Skill Icon/Items & Weapon/Shuriken.png" id="1_p1w43"]
+
+[resource]
+script = ExtResource("1_8d4ly")
+mana_cost = 2.0
+base_dmg = 3.0
+explosion_effect = ExtResource("1_nuf3s")
+icon = ExtResource("1_p1w43")
+id = "shuriken"
+name = "Shuriken"
+description = "Throws spinning shirikens"
+price = 50
+metadata/_custom_type_script = "uid://cwldjfppori1i"

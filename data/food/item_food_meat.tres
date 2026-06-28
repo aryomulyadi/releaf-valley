@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://crq8hvwgbm676"]
+
+[ext_resource type="Texture2D" uid="uid://dh8j3beujlajp" path="res://Sprites/Items/Food/Meat.png" id="1_p03qh"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="2_wxmgm"]
+
+[resource]
+script = ExtResource("2_wxmgm")
+is_consumable = true
+value = 1.0
+icon = ExtResource("1_p03qh")
+id = "food"
+name = "Meat"
+price = 1

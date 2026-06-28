@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cpejbxy2smpb7"]
+
+[ext_resource type="Texture2D" uid="uid://bh25ayt3werxw" path="res://Sprites/Items/Potion/Medipack.png" id="1_6lspg"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="1_gfblv"]
+
+[resource]
+script = ExtResource("1_gfblv")
+type = 2
+is_consumable = true
+value = 20.0
+icon = ExtResource("1_6lspg")
+id = "hp_potion"
+name = "Medipack"
+price = 15
+metadata/_custom_type_script = "uid://bc1eymge1rxd4"

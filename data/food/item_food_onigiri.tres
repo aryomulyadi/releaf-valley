@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://5aa58vp8cx3q"]
+
+[ext_resource type="Texture2D" uid="uid://co5mox4jwutts" path="res://Sprites/Items/Food/Onigiri.png" id="1_t7wdh"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="2_mavgg"]
+
+[resource]
+script = ExtResource("2_mavgg")
+is_consumable = true
+value = 1.0
+icon = ExtResource("1_t7wdh")
+id = "food"
+name = "Onigiri"
+price = 1

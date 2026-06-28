@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://c6m84lc2y73o5"]
+
+[ext_resource type="Texture2D" uid="uid://5v0cup2pt2uq" path="res://Sprites/Items/Food/Sushi.png" id="1_j0e6c"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="2_mtejs"]
+
+[resource]
+script = ExtResource("2_mtejs")
+is_consumable = true
+value = 1.0
+icon = ExtResource("1_j0e6c")
+id = "food"
+name = "Sushi"
+price = 1

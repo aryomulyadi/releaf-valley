@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://w03q1aypfkel"]
+
+[ext_resource type="Texture2D" uid="uid://tfa5nvtpmise" path="res://Sprites/Items/Food/Shrimp.png" id="1_raj2m"]
+[ext_resource type="Script" uid="uid://8ufvc2v1vids" path="res://scenes/ui/craft_panel/craft_button.gd" id="1_xkq7q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6a53"]
+bg_color = Color(0.21960784, 0.23137255, 0.2901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixrni"]
+bg_color = Color(0.16644347, 0.17604062, 0.22411826, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbvl1"]
+bg_color = Color(0.3074151, 0.32245037, 0.39724344, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="CraftButton" type="Button" unique_id=1963390137]
+custom_minimum_size = Vector2(80, 80)
+theme_override_styles/normal = SubResource("StyleBoxFlat_c6a53")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixrni")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qbvl1")
+script = ExtResource("1_xkq7q")
+
+[node name="ItemIcon" type="TextureRect" parent="." unique_id=1050913521]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_raj2m")
+expand_mode = 1
+stretch_mode = 5

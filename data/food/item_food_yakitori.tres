@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dfiacn3h6gmw1"]
+
+[ext_resource type="Texture2D" uid="uid://cwid15671q3sx" path="res://Sprites/Items/Food/Yakitori.png" id="1_sputy"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="2_6xv3q"]
+
+[resource]
+script = ExtResource("2_6xv3q")
+is_consumable = true
+value = 1.0
+icon = ExtResource("1_sputy")
+id = "food"
+name = "Yakitori"
+price = 1

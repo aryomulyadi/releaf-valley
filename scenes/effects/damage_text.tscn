@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dob17xhqf828e"]
+
+[node name="DamageText" type="Label" unique_id=578260425]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1

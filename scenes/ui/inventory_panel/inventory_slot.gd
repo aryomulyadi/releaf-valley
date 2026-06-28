@@ -1,0 +1,47 @@
+extends Button
+class_name InventorySlot
+
+signal on_slot_clicked(slot_index: int, button: int)
+signal on_slot_hovered(slot_index: int)
+
+@onready var item_icon: TextureRect = $ItemIcon
+@onready var amount_label: Label = $AmountLabel
+@onready var selector: TextureRect = $Selector
+
+var slot_index: int = -1
+var slot_data: SlotData
+
+func load_data(data: SlotData) -> void:
+	slot_data = data
+	if slot_data and slot_data.item:
+		item_icon.texture = slot_data.item.icon
+		item_icon.show()
+		
+		if slot_data.quantity > 1:
+			amount_label.text = str(slot_data.quantity)
+			amount_label.show()
+		else:
+			amount_label.hide()
+	else:
+		clear_slot()
+
+func clear_slot() -> void:
+	slot_data = null
+	item_icon.texture = null
+	item_icon.hide()
+	amount_label.hide()
+
+
+func _on_mouse_entered() -> void:
+	selector.show()
+	on_slot_hovered.emit(slot_index)
+
+
+func _on_mouse_exited() -> void:
+	selector.hide()
+
+
+func _on_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.is_pressed():
+		on_slot_clicked.emit(slot_index, event.button_index)
+		SoundManager.play(Sound.BUTTON)

@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://da2uq7lemyu38"]
+
+[ext_resource type="PackedScene" uid="uid://kd6vlaaitjgn" path="res://scenes/effects/skill_kunai.tscn" id="1_rm7ib"]
+[ext_resource type="Texture2D" uid="uid://b5q17s1e76n7k" path="res://Sprites/FX/Elemental/RockSpike/SpriteSheet.png" id="2_6uaag"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5t135"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(0, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgah8"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(54, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0duq"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(108, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr1ue"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(162, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nne07"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(216, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gahya"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(270, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br8yn"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(324, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ap36x"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(378, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rylld"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(432, 0, 54, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtk71"]
+atlas = ExtResource("2_6uaag")
+region = Rect2(486, 0, 54, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_amm6f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5t135")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgah8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0duq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr1ue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nne07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gahya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_br8yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ap36x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rylld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtk71")
+}],
+"loop": false,
+"name": &"default",
+"speed": 16.0
+}]
+
+[node name="SkillRockSpike" unique_id=1829296312 instance=ExtResource("1_rm7ib")]
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=538024006]
+sprite_frames = SubResource("SpriteFrames_amm6f")

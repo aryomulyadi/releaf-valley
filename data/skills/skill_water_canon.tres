@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://eyfmmo47sn5k"]
+
+[ext_resource type="Texture2D" uid="uid://qih0hma7my5e" path="res://Sprites/Ui/Skill Icon/Spell/WaterCanon.png" id="1_4l1nx"]
+[ext_resource type="PackedScene" uid="uid://48k5j0n836h8" path="res://scenes/effects/skill_water_pillar.tscn" id="1_rnptu"]
+[ext_resource type="Script" uid="uid://cwldjfppori1i" path="res://data/skills/skill_data.gd" id="2_rnptu"]
+
+[resource]
+script = ExtResource("2_rnptu")
+mana_cost = 3.0
+base_dmg = 2.4
+explosion_effect = ExtResource("1_rnptu")
+icon = ExtResource("1_4l1nx")
+id = "water_canon"
+name = "Water Canon"
+description = "Create a water canon"
+price = 50
+metadata/_custom_type_script = "uid://cwldjfppori1i"

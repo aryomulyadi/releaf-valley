@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://cwopkwcr22w38"]
+
+[ext_resource type="Texture2D" uid="uid://bjxem4vjr68t8" path="res://Sprites/Ui/Skill Icon/Spell/OrbPlant.png" id="1_a14w6"]
+[ext_resource type="PackedScene" uid="uid://bsib84gd3kw5s" path="res://scenes/effects/skill_orb_plant.tscn" id="1_sivbm"]
+[ext_resource type="Script" uid="uid://cwldjfppori1i" path="res://data/skills/skill_data.gd" id="2_sivbm"]
+
+[resource]
+script = ExtResource("2_sivbm")
+mana_cost = 1.35
+base_dmg = 2.0
+explosion_effect = ExtResource("1_sivbm")
+icon = ExtResource("1_a14w6")
+id = "orb_plant"
+name = "Orb Plant"
+description = "Summons a plant slash"
+price = 50
+metadata/_custom_type_script = "uid://cwldjfppori1i"

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://48k5j0n836h8"]
+
+[ext_resource type="PackedScene" uid="uid://kd6vlaaitjgn" path="res://scenes/effects/skill_kunai.tscn" id="1_f811t"]
+[ext_resource type="Texture2D" uid="uid://bfobmnj7fwago" path="res://Sprites/FX/Elemental/WaterPillar/SpriteSheet.png" id="2_nx1mt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txsrt"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(0, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v14xt"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(30, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihpen"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(60, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvcc0"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(90, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xoy06"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(120, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7ufd"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(150, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv2p1"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(180, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5gpu"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(210, 0, 30, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0uiv"]
+atlas = ExtResource("2_nx1mt")
+region = Rect2(240, 0, 30, 41)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wai5w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txsrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v14xt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihpen")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvcc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xoy06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7ufd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv2p1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5gpu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0uiv")
+}],
+"loop": false,
+"name": &"default",
+"speed": 16.0
+}]
+
+[node name="SkillWaterPillar" unique_id=1829296312 instance=ExtResource("1_f811t")]
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=538024006]
+sprite_frames = SubResource("SpriteFrames_wai5w")

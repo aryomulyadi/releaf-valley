@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://cbnwuibo54sks"]
+
+[ext_resource type="PackedScene" uid="uid://dbyi62msxaey1" path="res://scenes/effects/skill_water_splash.tscn" id="1_yabkc"]
+[ext_resource type="Texture2D" uid="uid://cdqmahq0yog20" path="res://Sprites/Ui/Skill Icon/Spell/OrbWater.png" id="2_6hb0k"]
+[ext_resource type="Script" uid="uid://cwldjfppori1i" path="res://data/skills/skill_data.gd" id="2_yabkc"]
+
+[resource]
+script = ExtResource("2_yabkc")
+mana_cost = 1.5
+base_dmg = 2.0
+explosion_effect = ExtResource("1_yabkc")
+icon = ExtResource("2_6hb0k")
+id = "water_splash"
+name = "Water Splash"
+description = "Releases a splash of water"
+price = 50
+metadata/_custom_type_script = "uid://cwldjfppori1i"

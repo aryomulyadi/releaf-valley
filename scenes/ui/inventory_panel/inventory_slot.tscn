@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://cmhvmetfs7x6r"]
+
+[ext_resource type="Script" uid="uid://dtu0oaii25ath" path="res://scenes/ui/inventory_panel/inventory_slot.gd" id="1_igacc"]
+[ext_resource type="Texture2D" uid="uid://dh8j3beujlajp" path="res://Sprites/Items/Food/Meat.png" id="2_br05l"]
+[ext_resource type="Texture2D" uid="uid://b25swkh2ytg3p" path="res://Sprites/Selector.png" id="3_fgh1n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3b1q"]
+bg_color = Color(0.38039216, 0.39215687, 0.4392157, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_igacc"]
+bg_color = Color(0.38039216, 0.39215687, 0.4392157, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_br05l"]
+bg_color = Color(0.38039216, 0.39215687, 0.4392157, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_fgh1n"]
+font_size = 12
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="InventorySlot" type="Button" unique_id=1066397662]
+custom_minimum_size = Vector2(35, 35)
+theme_override_styles/normal = SubResource("StyleBoxFlat_l3b1q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_igacc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_br05l")
+script = ExtResource("1_igacc")
+
+[node name="ItemIcon" type="TextureRect" parent="." unique_id=698313382]
+visible = false
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.5
+offset_top = -12.5
+offset_right = 12.5
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_br05l")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AmountLabel" type="Label" parent="." unique_id=1404327404]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -35.0
+offset_top = -17.0
+offset_right = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "1"
+label_settings = SubResource("LabelSettings_fgh1n")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Selector" type="TextureRect" parent="." unique_id=369128188]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -20.5
+offset_right = 20.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_fgh1n")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

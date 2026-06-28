@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://5m7ukym8ikvn"]
+
+[ext_resource type="Texture2D" uid="uid://t4cy74r261db" path="res://Sprites/Items/Food/Honey.png" id="1_qumqp"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="2_q03ve"]
+
+[resource]
+script = ExtResource("2_q03ve")
+is_consumable = true
+value = 1.0
+icon = ExtResource("1_qumqp")
+id = "food"
+name = "Honey"
+price = 1

@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://iykounqbfhl3"]
+
+[ext_resource type="PackedScene" uid="uid://bo8fap04yn7v1" path="res://scenes/enemy/enemy_mouse.tscn" id="1_ldvrq"]
+[ext_resource type="Script" uid="uid://ckm7ene0rikvd" path="res://data/loot_data.gd" id="2_5btea"]
+[ext_resource type="Texture2D" uid="uid://cjb2g6btw8gv1" path="res://Sprites/Actor/Monsters/Cyclope/SpriteSheet.png" id="2_yve5p"]
+[ext_resource type="Resource" uid="uid://cek660cgxcjne" path="res://data/potions/item_hp_small_5.tres" id="3_41fh1"]
+[ext_resource type="Resource" uid="uid://dsotgg4lmqhnm" path="res://data/equipment/item_equip_legs_common.tres" id="4_5btea"]
+
+[sub_resource type="Resource" id="Resource_3l1gi"]
+script = ExtResource("2_5btea")
+item = ExtResource("3_41fh1")
+amount = 5
+metadata/_custom_type_script = "uid://ckm7ene0rikvd"
+
+[sub_resource type="Resource" id="Resource_cfbm6"]
+script = ExtResource("2_5btea")
+item = ExtResource("4_5btea")
+amount = 1
+metadata/_custom_type_script = "uid://ckm7ene0rikvd"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmjah"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6yap"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5btea"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41fh1"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_df2rc"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l1gi"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfbm6"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qg424"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jyc8"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3d3c"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpsbn"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iukn0"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a86a4"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ll76c"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cevd"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dobls"]
+atlas = ExtResource("2_yve5p")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h5nfb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmjah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6yap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5btea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41fh1")
+}],
+"loop": true,
+"name": &"move_down",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_df2rc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l1gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfbm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qg424")
+}],
+"loop": true,
+"name": &"move_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jyc8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3d3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpsbn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iukn0")
+}],
+"loop": true,
+"name": &"move_right",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a86a4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ll76c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cevd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dobls")
+}],
+"loop": true,
+"name": &"move_up",
+"speed": 6.0
+}]
+
+[node name="EnemyCyclope" unique_id=2042762616 instance=ExtResource("1_ldvrq")]
+max_health = 15.0
+exp_amount = 25.0
+loot = Array[ExtResource("2_5btea")]([SubResource("Resource_3l1gi"), SubResource("Resource_cfbm6")])
+
+[node name="AnimSprite" parent="." index="1" unique_id=669766056]
+sprite_frames = SubResource("SpriteFrames_h5nfb")

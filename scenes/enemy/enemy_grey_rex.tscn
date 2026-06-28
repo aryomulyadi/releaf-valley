@@ -1,0 +1,163 @@
+[gd_scene format=3 uid="uid://j8426d7mltry"]
+
+[ext_resource type="PackedScene" uid="uid://bo8fap04yn7v1" path="res://scenes/enemy/enemy_mouse.tscn" id="1_0ixo6"]
+[ext_resource type="Script" uid="uid://ckm7ene0rikvd" path="res://data/loot_data.gd" id="2_5ngvg"]
+[ext_resource type="Resource" uid="uid://bthql2avbt1tu" path="res://data/food/item_food_shrimp.tres" id="3_5ngvg"]
+[ext_resource type="Resource" uid="uid://xtpwyp2ukxua" path="res://data/equipment/item_equip_sword_common.tres" id="4_ioyoh"]
+[ext_resource type="Texture2D" uid="uid://m65l4242tdp0" path="res://Sprites/Actor/Monsters/Grey Trex/SpriteSheet.png" id="5_kgs15"]
+
+[sub_resource type="Resource" id="Resource_1ls1t"]
+script = ExtResource("2_5ngvg")
+item = ExtResource("3_5ngvg")
+amount = 5
+metadata/_custom_type_script = "uid://ckm7ene0rikvd"
+
+[sub_resource type="Resource" id="Resource_ceqaj"]
+script = ExtResource("2_5ngvg")
+item = ExtResource("4_ioyoh")
+amount = 1
+metadata/_custom_type_script = "uid://ckm7ene0rikvd"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ls1t"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ceqaj"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m64ih"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dc2vd"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hk2y"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hge0y"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svpmv"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j25pv"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1nu0y"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtvmq"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt4mi"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs0nn"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qt5wa"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfuh8"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxkdi"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_km3k7"]
+atlas = ExtResource("5_kgs15")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5gqdq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ls1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ceqaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64ih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dc2vd")
+}],
+"loop": true,
+"name": &"move_down",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5hk2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hge0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svpmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j25pv")
+}],
+"loop": true,
+"name": &"move_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1nu0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtvmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt4mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs0nn")
+}],
+"loop": true,
+"name": &"move_right",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qt5wa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bfuh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxkdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_km3k7")
+}],
+"loop": true,
+"name": &"move_up",
+"speed": 6.0
+}]
+
+[node name="EnemyGreyRex" unique_id=2042762616 instance=ExtResource("1_0ixo6")]
+max_health = 25.0
+damage = 3.0
+exp_amount = 30.0
+loot = Array[ExtResource("2_5ngvg")]([SubResource("Resource_1ls1t"), SubResource("Resource_ceqaj")])
+
+[node name="AnimSprite" parent="." index="1" unique_id=669766056]
+sprite_frames = SubResource("SpriteFrames_5gqdq")

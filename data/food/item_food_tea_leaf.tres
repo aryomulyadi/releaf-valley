@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cbgsfhxbh5phd"]
+
+[ext_resource type="Texture2D" uid="uid://choehivpd1o0g" path="res://Sprites/Items/Food/TeaLeaf.png" id="1_13y21"]
+[ext_resource type="Script" uid="uid://bc1eymge1rxd4" path="res://data/item_data.gd" id="2_kj733"]
+
+[resource]
+script = ExtResource("2_kj733")
+is_consumable = true
+value = 1.0
+icon = ExtResource("1_13y21")
+id = "food"
+name = "Tea Leaf"
+price = 1

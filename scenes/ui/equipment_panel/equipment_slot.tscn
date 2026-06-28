@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://ds2brhcffun40"]
+
+[ext_resource type="Script" uid="uid://cfch1er2aqgw2" path="res://scenes/ui/equipment_panel/equipment_slot.gd" id="1_cuxh7"]
+[ext_resource type="Texture2D" uid="uid://bf3kx0rce6k0x" path="res://Sprites/Equipment/placeholder_helmet.png" id="2_kkf08"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msjr0"]
+bg_color = Color(0.21960784, 0.23137255, 0.2901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.59044087, 0.5904412, 0.5904411, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cuxh7"]
+bg_color = Color(0.20533442, 0.21656957, 0.27027935, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.59044087, 0.5904412, 0.5904411, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kkf08"]
+bg_color = Color(0.31933343, 0.33476827, 0.4114776, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.59044087, 0.5904412, 0.5904411, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="EquipmentSlot" type="Button" unique_id=964306316]
+custom_minimum_size = Vector2(40, 40)
+theme_override_styles/normal = SubResource("StyleBoxFlat_msjr0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cuxh7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kkf08")
+script = ExtResource("1_cuxh7")
+
+[node name="ItemIcon" type="TextureRect" parent="." unique_id=1229679117]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_kkf08")
